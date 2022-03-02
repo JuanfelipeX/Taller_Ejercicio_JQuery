@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/823/823431.png">
+    <title>Ejercicio JS</title>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
 
                 <ul class="nav flex-column ">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-warning" href="#">Título </a>
+                        <a class="nav-link btn btn-warning" href="#">Título</a>
                     </li>
                     <br>
                     <li class="nav-item">
@@ -33,7 +34,7 @@
                     </li>
                     <br>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-info" href="#">Imagen </a>
+                        <a class="nav-link btn btn-info" href="#" onclick="nuevaImagen()">Imagen</a>
                     </li>
                     <br>
                     <li class="nav-item">
@@ -41,10 +42,16 @@
                     </li>
                     <br>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-danger" href="#" id="contenido">Imprimir </a>
+                        <a class="nav-link btn btn-danger" href="#" onclick="imprimir()">Imprimir</a>
                     </li>
                     <br>
                 </ul>
+
+                <section>
+                    <div class="parrafo">
+                        <div class="mt-2 p-5 text-center jumbotron jumbotron-fluid" id="contenido"></div>
+                    </div>
+                </section>
             </div>
 
             <div class="col-8">
