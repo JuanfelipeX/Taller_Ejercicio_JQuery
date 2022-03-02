@@ -8,6 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/823/823431.png">
     <title>Ejercicio JS</title>
+
 </head>
 
 <body>
@@ -26,11 +27,11 @@
 
                 <ul class="nav flex-column ">
                     <li class="nav-item">
-                        <a class="nav-link btn btn-warning" href="#">Título</a>
+                        <a class="nav-link btn btn-warning" href="#" onclick="nuevoTitulo()" id="nav-item-titulo">Título</a>
                     </li>
                     <br>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-warning" href="#" onclick="nuevoParrafo()">Párrafo</a>
+                        <a class="nav-link btn btn-warning" href="#" onclick="nuevoParrafo()" id="nav-item-parrafo">Párrafo</a>
                     </li>
                     <br>
                     <li class="nav-item">
@@ -47,9 +48,17 @@
                     <br>
                 </ul>
 
-                <section>
-                    <div class="parrafo">
+                <section class="resultados">
+                    <div class="titulo">
+                        <div class="display-4" id="titulo"></div>
+                    </div>
+
+                    <div class="contenido">
                         <div class="mt-2 p-5 text-center jumbotron jumbotron-fluid" id="contenido"></div>
+                    </div>
+
+                    <div id="imagen">
+                        <img src="" alt="">
                     </div>
                 </section>
             </div>
@@ -60,20 +69,20 @@
                 </div>
 
                 <div class="row">
-                    <input type="file" id="imagen">
+                    <input type="file">
                 </div>
 
-                <div class="card" id="contenido">
-
+                <div class="card">
                 </div>
             </div>
         </div>
     </div>
 
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/contenido.js"></script>
+
 </body>
 
 </html>
