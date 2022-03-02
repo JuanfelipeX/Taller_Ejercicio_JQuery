@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="mt-2 p-5 text-center jumbotron jumbotron-fluid ">
+            <h1 class="display-4">Ejercicio Practico en JavaScript</h1>
+            <p class="lead">
+                Para la materia: Nuevas Tecnologías de Desarrollo <br> Made by: Juan Felipe Jimenez Pacheco
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-3">
+
+                <ul class="nav flex-column ">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-warning" href="#">Título </a>
+                    </li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-warning" href="#" onclick="nuevoParrafo()">Párrafo</a>
+                    </li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info" href="#">Imagen </a>
+                    </li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-info" href="#">Enlace</a>
+                    </li>
+                    <br>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-danger" href="#" id="contenido">Imprimir </a>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+
+            <div class="col-8">
+                <div class="row shadow p-3 mb-5 bg-body rounded">
+                    <textarea name="" id="texto" rows="8"></textarea>
+                </div>
+
+                <div class="row">
+                    <input type="file" id="imagen">
+                </div>
+
+                <div class="card" id="contenido">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/contenido.js"></script>
+</body>
+
+</html>
