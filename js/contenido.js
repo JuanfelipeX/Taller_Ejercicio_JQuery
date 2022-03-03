@@ -4,13 +4,11 @@ $(document).ready(function() {
     });
 });
 
-
 $(document).ready(function() {
     $("#nav-item-parrafo").click(function() {
         $("#contenido").text($("#texto").val());
     });
 });
-
 
 function readURL(input) {
     if (input.files && input.files[0]) {
@@ -27,5 +25,14 @@ function readURL(input) {
 $(document).ready(function() {
     $("#nav-item-enlace").click(function() {
         $("#enlace").text($("#texto").val());
+    });
+});
+
+$(document).ready(function() {
+    $("#nav-item-imprecion").click(function() {
+        var mode = "iframe"; //popup
+        var close = mode == "popup";
+        var options = { mode: mode, popClose: close };
+        $(".resultados").printArea(options);
     });
 });
