@@ -11,6 +11,7 @@ $(document).ready(function() {
     });
 });
 
+
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
@@ -21,8 +22,4 @@ function readURL(input) {
 
         reader.readAsDataURL(input.files[0]);
     }
-
-    $("#nav-item-imagen").click(function() {
-        $("#imagen").FileReader($("#texto").onload);
-    });
 }
