@@ -23,3 +23,9 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 }
+
+$(document).ready(function() {
+    $("#nav-item-enlace").click(function() {
+        $("#enlace").text($("#texto").val());
+    });
+});
