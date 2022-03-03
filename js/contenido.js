@@ -10,3 +10,19 @@ $(document).ready(function() {
         $("#contenido").text($("#texto").val());
     });
 });
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            $("#archivo").attr("src", e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+
+    $("#nav-item-imagen").click(function() {
+        $("#imagen").FileReader($("#texto").onload);
+    });
+}

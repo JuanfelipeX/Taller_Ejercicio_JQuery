@@ -35,7 +35,7 @@
                     </li>
                     <br>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-info" href="#" onclick="nuevaImagen()">Imagen</a>
+                        <a class="nav-link btn btn-info" href="#" onclick="nuevaImagen()" id="nav-item-imagen">Imagen</a>
                     </li>
                     <br>
                     <li class="nav-item">
@@ -50,7 +50,7 @@
 
                 <section class="resultados">
                     <div class="titulo">
-                        <div class="display-4" id="titulo"></div>
+                        <div class="display-4 text-center" id="titulo"></div>
                     </div>
 
                     <div class="contenido">
@@ -58,7 +58,7 @@
                     </div>
 
                     <div id="imagen">
-                        <img src="" alt="">
+                        <a href="" id="mostrar"></a>
                     </div>
                 </section>
             </div>
@@ -69,7 +69,8 @@
                 </div>
 
                 <div class="row">
-                    <input type="file">
+                    <input type='file' onchange="readURL(this);" />
+                    <img id="archivo" src="http://placehold.it/180" alt="your image" />
                 </div>
 
                 <div class="card">
