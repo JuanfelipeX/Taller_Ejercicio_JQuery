@@ -11,15 +11,18 @@ $(document).ready(function() {
 });
 
 function readURL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
 
-        reader.onload = function(e) {
-            $("#archivo").attr("src", e.target.result);
-        };
+    $("#nav-item-imagen").click(function() {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
 
-        reader.readAsDataURL(input.files[0]);
-    }
+            reader.onload = function(e) {
+                $("#imagen").attr("src", e.target.result);
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    });
 }
 
 $(document).ready(function() {
